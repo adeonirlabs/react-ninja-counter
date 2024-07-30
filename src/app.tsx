@@ -1,16 +1,19 @@
-import { useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 
 import { Counter } from '~/components/counter'
+import { decrement, increment } from '~/slices/counter'
+import type { AppDispatch, RootState } from '~/store'
 
 export function App() {
-  const [counter, setCounter] = useState(0)
+  const counter = useSelector((state: RootState) => state.counter.value)
+  const dispatch: AppDispatch = useDispatch()
 
-  const increment = () => setCounter(counter + 1)
-  const decrement = () => setCounter(counter - 1)
+  const handleDecrement = () => dispatch(decrement())
+  const handleIncrement = () => dispatch(increment())
 
   return (
     <main className="flex h-screen items-center justify-center">
-      <Counter counter={counter} decrement={decrement} increment={increment} />
+      <Counter counter={counter} decrement={handleDecrement} increment={handleIncrement} />
     </main>
   )
 }
