@@ -4,6 +4,10 @@
 
 É sobre um contador onde é possível adicionar, remover, incrementar e decrementar contadores individualmente pois o estado global de cada contador é controlado pelo Redux.
 
+## Projeto original
+
+O projeto original foi desenvolvido há 4 anos atrás e usava o Redux puro, Webpack com Babel e Chai para os testes. Neste projeto, foi feita a migração para o Redux Toolkit, Vite e Vitest.
+
 ## Funcionalidades
 
 - Adicionar um novo contador
