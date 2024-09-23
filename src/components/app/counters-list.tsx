@@ -21,14 +21,14 @@ export function CounterList() {
         Add Counter
       </Button>
       {counters.map((counter, index) => (
-        <div className="relative" key={index}>
+        <div className="relative" key={`${counter}-${index}`}>
           <Counter
             counter={counter}
             onDecrement={() => handleDecrement(index)}
             onIncrement={() => handleIncrement(index)}
           />
           <Button
-            className="absolute -right-2 -top-1 size-6"
+            className='-right-2 -top-1 absolute size-6'
             icon={X}
             onClick={() => handleRemoveCounter(index)}
             variant="destructive"
