@@ -22,8 +22,7 @@ O projeto original foi desenvolvido há 4 anos atrás e usava o Redux puro, Webp
 - [Tailwind CSS](https://tailwindcss.com/): Framework CSS utilitário para estilização.
 - [Vitest](https://vitest.dev/): Framework de testes unitários.
 - [Redux Toolkit](https://redux-toolkit.js.org/): Conjunto de ferramentas para gerenciamento de estado.
-- [ESLint](https://eslint.org/): Ferramenta de linting para identificar e corrigir problemas no código.
-- [Prettier](https://prettier.io/): Ferramenta de formatação de código.
+- [Biome](https://biomejs.dev/): Ferramenta de linting para identificar e corrigir problemas no código e formatação de código
 
 ## Instalação
 
