@@ -22,6 +22,7 @@ export const counterSlice = createSlice({
   },
 })
 
-export const { addCounter, removeCounter, increment, decrement } = counterSlice.actions
+export const { addCounter, removeCounter, increment, decrement } =
+  counterSlice.actions
 
 export const counterReducer = counterSlice.reducer

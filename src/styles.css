@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
-  body, #root {
+  body,
+  #root {
     @apply h-screen bg-indigo-100 text-gray-900;
   }
 }

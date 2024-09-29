@@ -1,6 +1,12 @@
 import type { UnknownAction } from '@reduxjs/toolkit'
 
-import { addCounter, counterReducer, decrement, increment, removeCounter } from './counter'
+import {
+  addCounter,
+  counterReducer,
+  decrement,
+  increment,
+  removeCounter,
+} from './counter'
 
 describe('counter slice', () => {
   it('should return the initial state', () => {

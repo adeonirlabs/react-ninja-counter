@@ -3,7 +3,12 @@ import { useDispatch, useSelector } from 'react-redux'
 
 import { Button } from '~/components/ui/button'
 import { Counter } from '~/components/ui/counter'
-import { addCounter, decrement, increment, removeCounter } from '~/slices/counter'
+import {
+  addCounter,
+  decrement,
+  increment,
+  removeCounter,
+} from '~/slices/counter'
 import type { AppDispatch, RootState } from '~/store'
 
 export function CounterList() {
@@ -28,7 +33,7 @@ export function CounterList() {
             onIncrement={() => handleIncrement(index)}
           />
           <Button
-            className='-right-2 -top-1 absolute size-6'
+            className="-right-2 -top-1 absolute size-6"
             icon={X}
             onClick={() => handleRemoveCounter(index)}
             variant="destructive"
